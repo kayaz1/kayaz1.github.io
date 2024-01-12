@@ -1,15 +1,70 @@
+body{
+    font-family: Inter;
+    margin: 0;
+    position: relative;
+}
 .w100{
     width: 100%;
     float: left;
 }
 a{
+    color: #000;
     text-decoration: none;
+}
+a:hover{
+    color: orange;
 }
 
 /*menu*/
+.menu{
+    margin-bottom: 20px;
+}
 .menu ul{
-float: right;
+    float: right;
+    list-style: none;
 }
 .menu ul li{
     display: inline-block;
-    }
+}
+.menu ul li a{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner .con{
+    width: calc(100% + 20px);
+    position: relative;
+    left:-10px;
+}
+.banner .item{
+    width: calc(25% - 20px);
+    float: left;
+    padding: 0 10px;
+}
+.banner .item img{
+    width: 100%;
+}
+.banner .item img:hover{
+    transform:scale(1.1);
+    transition: all 1s;
+}
+
+/*logo*/
+.logo .con{
+    padding: 30px 60px ;
+}
+.logo .title{
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing:-0.08em;
+}
+.logo .title_small{
+    font-size: 20px;
+    font-weight: 300;
+}
